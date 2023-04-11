@@ -11,7 +11,7 @@ public class exercicio02 {
         System.out.print("Digite a altura (m): ");
         double altura = scanner.nextDouble();
 
-        double imc = calcularIMC(peso/altura*altura);
+        double imc = calcularIMC(peso,altura);
         String classificacao = getClassificacaoIMC(imc);
         double pesoIdeal = calcularPesoIdeal(altura);
 
