@@ -3,14 +3,12 @@ package semana10;
 public class Circulo {
     public double raio;
 
-    //Math.pow(base, expoente)
-    public double calcularArea() {
-        return Math.PI * Math.pow(raio, 2)
+    public static double calcularArea(double raio){
+        return 3.14 * (raio * raio);
     }
 
-    public double calcularPerimetro() {
-        return 2 * Math.PI * raio;
+    public static double calcularPerimetro(double raio){
+        return 2 * 3.14 * raio;
     }
 }
-
 

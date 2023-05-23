@@ -3,14 +3,11 @@ package semana10;
 public class Quadrado {
     public double lado;
 
-    
-    public double calcularArea() {
+    public static double calcularArea(double lado){
         return lado * lado;
     }
-
-    public double calcularPerimetro() {
-        return 4 * lado;
+    public static double calcularPerimetro(double lado){
+        return lado * 4;
     }
 }
-
 
