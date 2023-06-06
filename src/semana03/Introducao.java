@@ -16,18 +16,6 @@ public class Introducao {
          // Inteiros
          // byte, short, int, long
 
-         byte n1 = 100; // 1 byte - -128 a 127
-         short n2 = 3000; // 2 bytes - -32768 a 32767
-         int n3 = 4000000; //  4 bytes - 2 bilhoes
-         long n4 = 3232323232323L; // 8 bytes
-         // System.out.println(n1);
-         // System.out.println(n2);
-         // System.out.println(n3);
-         // System.out.println(n4);
-
-         // Ponto Flutuante 
-         // float, double
-         float nota1 = 9.5f; // 4 bytes 
          double nota2 = 9.6; // 8 bytes 
          // System.out.println(nota1);
          // System.out.println(nota2);
@@ -86,4 +74,4 @@ public class Introducao {
 
     }
 }
-}
+

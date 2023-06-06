@@ -1,9 +1,9 @@
-package semana03.semana05;
+package semana05;
 
     import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class Exercicio2 {
+public class Exercicio02 {
    
     public static void main (String[] args){
         Scanner sc= new Scanner(System.in);
@@ -59,6 +59,4 @@ public class Exercicio2 {
         sc.close();
 
     }
-}
-
 }

@@ -1,9 +1,9 @@
-package semana03.semana04;
+package semana04;
 
 
     import java.util.Scanner;
 
-public class Exercicio3 {
+public class Exercicio03 {
     public static void main(String[] args) {
 	    Scanner sc= new Scanner (System.in);
 		System.out.println("Entre com o valor da compra:");
@@ -40,4 +40,3 @@ public class Exercicio3 {
 	}
 }
 
-}

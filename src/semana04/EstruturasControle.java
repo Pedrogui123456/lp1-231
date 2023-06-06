@@ -1,4 +1,4 @@
-package semana03.semana04;
+package semana04;
 
 public class EstruturasControle {
     public static void main(String[] args) {
@@ -92,4 +92,4 @@ public class EstruturasControle {
             }
         }
 }
-}
+
