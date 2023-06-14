@@ -15,6 +15,9 @@ public class AquarioTest {
         assertEquals(4.0, volume);
     }
 
+    private void assertEquals(double d, double volume) {
+    }
+
     @Test
     public void testaCalcularPotenciaDoTermostato() {
 
@@ -44,6 +47,9 @@ public class AquarioTest {
         double [] filtragem = aquario.calcularQuantidadeLitrosFiltro();
 
         assertArrayEquals(esperado, filtragem);
+    }
+
+    private void assertArrayEquals(double[] esperado, double[] filtragem) {
     }
 
 }

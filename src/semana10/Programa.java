@@ -29,8 +29,6 @@ public class Programa {
 
 
 
-        String palavra = "abc";
-
         Retangulo ret1 = new Retangulo();
         ret1.base = 10.0;
         ret1.altura = 5.0;

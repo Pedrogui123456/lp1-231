@@ -1,6 +1,6 @@
 package semana06;
 
-    import java.util.Scanner;
+import java.util.Scanner;
 
 public class Aquario {
     public static void main(String[] args) {

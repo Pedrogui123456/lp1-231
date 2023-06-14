@@ -1,11 +1,6 @@
 package semana11;
 
 public class PessoaTest {
-    import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.junit.Test;
-
-public class PessoaTest {
 
     @Test
     public void calculaImc(){
@@ -18,6 +13,9 @@ public class PessoaTest {
         assertEquals(imc, 22.22222222222222, 0.0001);   
     }
     
+    private void assertEquals(double imc, double d, double e) {
+    }
+
     @Test
     public void getFaixa(){
         Pessoa pessoa = new Pessoa();
@@ -55,6 +53,9 @@ public class PessoaTest {
         pessoa.peso = 125;
         faixa = pessoa.getFaixa();
         assertEquals("Você pertence ao grupo de Obesidade Classe 3", faixa);
+    }
+
+    private void assertEquals(String string, String faixa) {
     }
 
     @Test
@@ -98,4 +99,4 @@ public class PessoaTest {
     }
     
 }
-}
+

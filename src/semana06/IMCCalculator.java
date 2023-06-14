@@ -4,7 +4,7 @@ package semana06;
 
 public class IMCCalculator {
     public static void main(String[] args) {
-         Scanner scanner = new Scanner(System.in){
+        Scanner scanner = new Scanner(System.in){
             System.out.print("Digite o seu peso em Kg: ");
             double peso = scanner.nextDouble();
          
@@ -35,7 +35,7 @@ public class IMCCalculator {
         
     }
 
-    public static double calcularIMC(double peso, double altura) {
+    public static double calcularIMC(double peso, double altura){
         // Fórmula para calcular o IMC: peso / (altura * altura)
         double imc = peso / (altura * altura);
         return imc;
@@ -45,5 +45,11 @@ public class IMCCalculator {
         // Fórmula para calcular o peso ideal: imcIdeal * (altura * altura)
         double pesoIdeal = imcIdeal * (altura * altura);
         return pesoIdeal;
+        }
+    }
+
+
+    public String toString() {
+        return "IMCCalculator []";
     }
 }

@@ -15,6 +15,12 @@ public class Aquario {
     }
     public  double filtragemPorHora(){
         return calcularVolume() * 3;
+    }
+    public double calcularPotenciaDoTermostato(double temperaturaDesejada2, double temperaturaAmbiente2) {
+        return 0;
+    }
+    public double[] calcularQuantidadeLitrosFiltro() {
+        return null;
     }    
 }
 

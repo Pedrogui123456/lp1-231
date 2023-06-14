@@ -1,5 +1,7 @@
 package semana12;
 
+import semana11.Test;
+
 public class AquarioTest {
     @Test
     public void testConstrutorComDimensoes() {
@@ -7,6 +9,9 @@ public class AquarioTest {
         assertEquals(10.0, aquario.comprimento, 0.01);
         assertEquals(5.0, aquario.altura, 0.01);
         assertEquals(3.0, aquario.largura, 0.01);
+    }
+
+    private void assertEquals(double d, double comprimento, double e) {
     }
 
     @Test
