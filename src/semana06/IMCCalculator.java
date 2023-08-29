@@ -5,10 +5,10 @@ package semana06;
 public class IMCCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in){
-            System.out.print("Digite o seu peso em Kg: ");
+            System.out.println("Digite o seu peso em Kg: ");
             double peso = scanner.nextDouble();
          
-            System.out.print("Digite a sua altura em metros: ");
+            System.out.println("Digite a sua altura em metros: ");
             double altura = scanner.nextDouble();
 
             double imc = calcularIMC(peso, altura);

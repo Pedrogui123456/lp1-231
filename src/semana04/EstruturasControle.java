@@ -7,7 +7,7 @@ public class EstruturasControle {
         final int MAIORIDADE =18;
         var idade = 17;
 
-        if (idade>=MAIORIDADE) {
+        if (idade >= MAIORIDADE) {
             System.out.println("Maior de idade");
         }
 

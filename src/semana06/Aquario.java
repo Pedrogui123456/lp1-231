@@ -4,44 +4,33 @@ import java.util.Scanner;
 
 public class Aquario {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner (System.in);
 
-        System.out.print("Digite o comprimento do aquário em centímetros: ");
+        System.out.println("Comprimento aquário:(cm) ");
         double comprimento = scanner.nextDouble();
-
-        System.out.print("Digite a altura do aquário em centímetros: ");
+        System.out.println("Altura aquário:(cm) ");
         double altura = scanner.nextDouble();
-
-        System.out.print("Digite a largura do aquário em centímetros: ");
+        System.out.println("Largura aquário:(cm) ");
         double largura = scanner.nextDouble();
+        System.out.println("Temperatura ambiente: (C⁰)");
+        double temperaturaAmbiente = scanner.nextDouble(); 
+        System.out.println("Temperatura desejada:(C⁰) ");
+        double temperaturaDesejada = scanner.nextDouble();
 
-        double volume = calcularVolumeAquario(comprimento, altura, largura);
-        double potenciaTermostato = calcularPotenciaTermostato(volume);
-        double filtragemPorHora = calcularFiltragemPorHora(volume);
+        double volume = volume(comprimento, altura, largura);
 
-        System.out.println("Volume do aquário: " + volume + " litros");
-        System.out.println("Potência do termostato necessária: " + potenciaTermostato + " watts");
-        System.out.println("Quantidade de filtragem por hora necessária: " + filtragemPorHora + " litros/hora");
+        System.out.println("\nVolume do aquário:" + volume);
+        System.out.println("A potência do termostato é: " + potenciaTermostato(volume, temperaturaAmbiente, temperaturaDesejada));
+        System.out.println("A filtragem por hora é: "+ filtragemPorHora(volume));
     }
 
-    public static double calcularVolumeAquario(double comprimento, double altura, double largura) {
-        // Fórmula para calcular o volume: comprimento * altura * largura
-        double volumeEmCm = comprimento * altura * largura;
-        double volumeEmLitros = volumeEmCm / 1000; // 1 litro = 1000 cm³
-        return volumeEmLitros;
+    public static double volume(double comprimento, double altura, double largura){
+        return (comprimento * altura * largura) / 1000;
     }
-
-    public static double calcularPotenciaTermostato(double volume) {
-        // Fórmula para calcular a potência do termostato: 0.1 watt por litro
-        double potencia = volume * 0.1;
-        return potencia;
+    public static double potenciaTermostato(double volume, double temperaturaAmbiente, double temperaturaDesejada){
+        return volume*0.05*(temperaturaAmbiente-temperaturaDesejada);
     }
-
-    public static double calcularFiltragemPorHora(double volume) {
-        // Fórmula para calcular a quantidade de filtragem por hora: 3 vezes o volume do aquário
-        double filtragem = volume * 3;
-        return filtragem;
+    public static double filtragemPorHora(double volume){
+        return volume * 3;
     }
 }
-
-
